@@ -10,6 +10,7 @@ import ThemeState from './states/ThemeAtom'
 import ChangeTheme from './Components/ChangeTheme'
 import User from './Components/User'
 import UserState from './states/UserAtom'
+import TodoList from './Components/TodoList/TodoList'
 function App() {
   var theme = useRecoilValue(ThemeState)
   const [user, setUser] = useRecoilState(UserState)
@@ -39,6 +40,12 @@ function App() {
       <div>
         <User></User>
       </div>
+
+      <div>
+        <TodoList></TodoList>
+      </div>
+
+
 
     </>
   )
